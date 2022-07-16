@@ -10,4 +10,18 @@
 </head>
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
+	<header>
+		<div class="container row">
+			<a id="header-logo" class="col col-3" href="<?php bloginfo('url'); ?>"></a>
+			<nav id="header-nav" class="col col-9" >
+				<?php
+				wp_nav_menu(array(
+					'menu' => 'Header Main Menu',
+					'theme_location' => 'header-main-menu',
+					'depth' => 1
+				));
+				?>
+			</nav>
+		</div>
+	</header>
 	<div class="wp-site-blocks">

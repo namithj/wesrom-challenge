@@ -1,0 +1,47 @@
+header {
+	box-shadow: inset 0px -1px 0px #E5E5E5;
+
+	.container {
+		max-width: 1440px;
+	}
+
+	#header-logo {
+		background: url(../images/header-logo.svg) no-repeat center center / contain;
+		width: 170px;
+		height: 32px;
+		display: block;
+		margin: 34px 0 34px 40px;
+	}
+
+	#header-nav {
+		ul {
+			margin: 38px 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				margin: 0 32px 0 0;
+				padding: 0;
+				display: inline-block;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a {
+					font-style: normal;
+					font-weight: 700;
+					font-size: 1.25rem;
+					line-height: 1rem;
+					text-transform: uppercase;
+					color: $dark-grey;
+					text-decoration: none;
+
+					&:hover {
+						color: $blue;
+					}
+				}
+			}
+		}
+	}
+}
