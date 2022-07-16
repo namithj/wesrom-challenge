@@ -1,12 +1,4 @@
 @import 'styleguide';
 @import 'grid';
 @import 'header';
-
-body {
-	background: $white;
-	font-family: $base-font-family;
-	font-style: normal;
-	font-weight: 400;
-	font-size: $base-font-size;
-	line-height: $base-line-height;
-}
+@import 'footer';

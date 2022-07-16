@@ -1,9 +1,23 @@
-/*Fonts*/
-$base-font-family: 'Montserrat', sans-serif;
-$base-font-size: 16px;
-$base-line-height: 24px;
-
 /*Colors*/
 $white: #FFFFFF;
 $dark-grey: #949494;
 $blue: #02B5EE;
+$light-grey: #FAFAFA;
+$black: #000000;
+
+body {
+	background: $white;
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+
+	a {
+		color: $dark-grey;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+}

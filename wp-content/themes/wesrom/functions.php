@@ -3,6 +3,8 @@
  * This file contains or includes all the actions and hooks added by the theme.
  */
 
+require_once(dirname(__FILE__).'/includes/menu-functions.php');
+
 /**
  * Enqueue the theme stylesheet.
  */
@@ -20,24 +22,6 @@ add_action(
 			'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap',
 			[],
 			wp_get_theme()->get( 'Version' )
-		);
-	}
-);
-
-/**
- * Register WordPress Menus.
- */
-add_action(
-	'after_setup_theme',
-	function() {
-		register_nav_menus(
-			[
-				'header-main-menu' => 'Header Main Menu',
-				'footer-left-menu' => 'Footer Left Menu',
-				'footer-middle-menu' => 'Footer Middle Menu',
-				'footer-right-menu' => 'Footer Right Menu',
-				'footer-social-menu' => 'Footer Social Menu',
-			]
 		);
 	}
 );
