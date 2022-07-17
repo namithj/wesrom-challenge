@@ -23,3 +23,74 @@
 		margin: 0 0 16px;
 	}
 }
+
+.services-box-type-two {
+	border-top: 8px solid $blue;
+	padding: 24px 24px 84px 24px;
+	position: relative;
+	background: $light-grey;
+
+	h3 {
+		margin: 0 0 16px;
+	}
+
+	p {
+		margin: 0 0 16px;
+	}
+
+	p.learn-more {
+		position: absolute;
+		bottom: 24px;
+		margin: 0;
+
+		a {
+			color: $black;
+			text-decoration: none;
+
+			&:after {
+				content: '';
+				background: url(../images/arrow.svg) no-repeat center center;
+				width: 22.43px; 
+				height: 12.62px;
+				display: inline-block;
+				margin-left: 8.75px;
+				vertical-align: middle;
+				margin-bottom: 1px;
+			}
+
+			&:hover {
+				color: $blue;
+
+				&:after {
+					filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+				}
+			}
+		}
+	}
+}
+
+.services-box-type-three {
+	padding: 28px 40px 24px 40px;
+	margin: 0 0 24px;
+	background: $light-grey;
+
+	h2 {
+		margin: 0 0 24px;
+		padding-bottom: 20px;
+		vertical-align: middle;
+		border-bottom: 1px solid $grey;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 33.33px;
+			height: 33.33px;
+			margin-right: 19.33px;
+			background: url(../images/round-check.svg) no-repeat center center;
+		}
+	}
+
+	p {
+		margin: 0 0 24px;
+ 	}
+}

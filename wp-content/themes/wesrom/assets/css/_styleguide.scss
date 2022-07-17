@@ -4,6 +4,7 @@ $dark-grey: #949494;
 $blue: #02B5EE;
 $light-grey: #FAFAFA;
 $black: #000000;
+$grey: 	#D2D2D2;
 
 body {
 	background: $white;
@@ -19,5 +20,13 @@ body {
 		&:hover {
 			color: $blue;
 		}
+	}
+
+	p {
+		margin: 0 0 16px;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 0;
 	}
 }

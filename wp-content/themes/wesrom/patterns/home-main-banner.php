@@ -5,7 +5,7 @@
 	<!-- /wp:heading -->
 
 	<!-- wp:heading {"level":1,"style":{"typography":{"fontStyle":"normal","fontWeight":"300"}},"textColor":"black","fontSize":"very-large"} -->
-	<h1 class="has-black-color has-text-color has-very-large-font-size" style="font-style:normal;font-weight:300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis odio et erat ultrices laoreet. </h1>
+	<h1 class="has-black-color has-text-color has-extra-large-font-size" style="font-style:normal;font-weight:300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis odio et erat ultrices laoreet. </h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:buttons -->

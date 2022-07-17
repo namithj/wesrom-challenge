@@ -25,6 +25,12 @@ add_action(
 			[],
 			wp_get_theme()->get( 'Version' )
 		);
+		wp_enqueue_script(
+			'wescom-scripts',
+			get_template_directory_uri() . '/assets/js/scripts.js',
+			[ 'jquery' ],
+			wp_get_theme()->get( 'Version' ) . wp_rand()
+		);
 	}
 );
 
