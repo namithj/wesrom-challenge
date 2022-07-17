@@ -27,9 +27,9 @@ add_action(
 add_filter(
 	'wp_get_nav_menu_items',
 	function( $items, $menu, $args ) {
-		foreach ( $items as $key => $item ) {			
-			if ( isset($item->classes) && is_array($item->classes) && in_array('no-link', $item->classes, true) ) {
-				$item->url = "";
+		foreach ( $items as $key => $item ) {
+			if ( isset( $item->classes ) && is_array( $item->classes ) && in_array( 'no-link', $item->classes, true ) ) {
+				$item->url = '';
 			}
 		}
 		return $items;
