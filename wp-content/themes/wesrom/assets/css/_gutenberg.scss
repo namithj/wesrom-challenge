@@ -1,0 +1,28 @@
+body {
+	.has-normal-font-size {
+		line-height: 1rem;
+	}
+
+	.has-medium-font-size {
+		line-height: 1.75rem;
+	}
+
+	.has-large-font-size {
+		line-height: 2rem;
+	}
+
+	.has-very-large-font-size {
+		line-height: 3.5rem;
+	}
+
+	.wp-block-button__link {
+		font-style: normal;
+		font-weight: 700;
+		padding: 16px 40px;
+		border-radius: 0;
+	}
+
+	.wp-block-columns {
+		gap: 24px !important;
+	}
+}

@@ -11,11 +11,15 @@
 		margin: 0 0 40px;
 		padding-right: 190px;
 	}
-	
-	.wp-block-button__link {
-		font-style: normal;
-		font-weight: 700;
-		padding: 16px 40px;
-		border-radius: 0;
+}
+
+.services-box-type-one {
+	figure {
+		margin: 0 0 8px;
+		min-height: 80px;
+	}
+
+	p {
+		margin: 0 0 16px;
 	}
 }
