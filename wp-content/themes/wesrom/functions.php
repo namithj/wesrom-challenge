@@ -6,6 +6,7 @@
 require_once dirname( __FILE__ ) . '/includes/file-loader.php';
 require_once dirname( __FILE__ ) . '/includes/menu-functions.php';
 require_once dirname( __FILE__ ) . '/includes/patterns.php';
+require_once dirname( __FILE__ ) . '/blocks/contact-form/contact-form.php';
 
 /**
  * Enqueue the theme stylesheets and scripts.
@@ -19,17 +20,20 @@ add_action(
 			[],
 			wp_get_theme()->get( 'Version' ) . wp_rand()
 		);
+
 		wp_enqueue_style(
 			'wescom-fonts',
 			'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap',
 			[],
 			wp_get_theme()->get( 'Version' )
 		);
+
 		wp_enqueue_script(
 			'wescom-scripts',
 			get_template_directory_uri() . '/assets/js/scripts.js',
 			[ 'jquery' ],
-			wp_get_theme()->get( 'Version' ) . wp_rand()
+			wp_get_theme()->get( 'Version' ) . wp_rand(),
+			false
 		);
 	}
 );

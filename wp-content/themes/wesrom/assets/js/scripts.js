@@ -18,4 +18,9 @@ jQuery(document).ready(function () {
 		});
 		jQuery('.services-box-type-two', this).height(tallest_box);
 	});
+
+	jQuery('.wp-block-wesrom-contact-form form').submit(function() {
+		console.log("Form Submitted.");
+		return false;
+	})
 });

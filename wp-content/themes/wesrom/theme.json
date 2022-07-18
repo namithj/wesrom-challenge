@@ -58,6 +58,11 @@
 			],
 			"fontSizes": [
 				{
+					"slug": "small",
+					"size": "0.75rem",
+					"name": "Small"
+				},
+				{
 					"slug": "normal",
 					"size": "1rem",
 					"name": "Normal"

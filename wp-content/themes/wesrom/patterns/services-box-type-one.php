@@ -1,6 +1,6 @@
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"48px","right":"48px","bottom":"56px","left":"48px"}}},"backgroundColor":"light-grey","className":"services-box-type-one"} -->
 <div class="wp-block-group services-box-type-one has-light-grey-background-color has-background"
-	style="padding-top:52px;padding-right:48px;padding-bottom:56px;padding-left:48px">
+	style="padding-top:48px;padding-right:48px;padding-bottom:56px;padding-left:48px">
 	<!-- wp:image {"align":"center","id":62,"sizeSlug":"full","linkDestination":"none","className":"size-full"} -->
 	<figure class="wp-block-image aligncenter size-full"><img
 			src="<?php bloginfo( 'template_url' ); ?>/assets/images/placeholder-small.jpg" alt=""
