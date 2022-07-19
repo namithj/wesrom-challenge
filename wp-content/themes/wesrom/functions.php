@@ -7,6 +7,7 @@ require_once dirname( __FILE__ ) . '/includes/file-loader.php';
 require_once dirname( __FILE__ ) . '/includes/menu-functions.php';
 require_once dirname( __FILE__ ) . '/includes/patterns.php';
 require_once dirname( __FILE__ ) . '/blocks/contact-form/contact-form.php';
+require_once dirname( __FILE__ ) . '/blocks/testimonial-slider/testimonial-slider.php';
 
 /**
  * Enqueue the theme stylesheets and scripts.

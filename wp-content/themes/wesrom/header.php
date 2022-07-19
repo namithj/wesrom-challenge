@@ -14,14 +14,20 @@
 		<div class="container row">
 			<a id="header-logo" class="col col-3" href="<?php bloginfo( 'url' ); ?>"></a>
 			<nav id="header-nav" class="col col-9" >
-				<?php
-				wp_nav_menu(
-					[
-						'theme_location' => 'header-main-menu',
-						'depth'          => 1,
-					]
-				);
-				?>
+				<div class="hamburger-menu">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<?php
+					wp_nav_menu(
+						[
+							'theme_location' => 'header-main-menu',
+							'depth'          => 1,
+						]
+					);
+					?>
+				</div>
 			</nav>
 		</div>
 	</header>

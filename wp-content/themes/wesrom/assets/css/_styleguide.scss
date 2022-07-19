@@ -2,6 +2,7 @@
 $white: #FFFFFF;
 $dark-grey: #949494;
 $blue: #02B5EE;
+$dark-blue: #0085D0;
 $light-grey: #FAFAFA;
 $black: #000000;
 $grey: 	#D2D2D2;
@@ -28,5 +29,11 @@ body {
 
 	h1, h2, h3, h4, h5, h6 {
 		margin-top: 0;
+	}
+
+	.wp-site-blocks {
+		@media only screen and (max-width: 1199px) {
+			padding: 0 15px;
+		}		
 	}
 }

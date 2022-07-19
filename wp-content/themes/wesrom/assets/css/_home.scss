@@ -1,8 +1,16 @@
 .home-main-banner {	
+	@media only screen and (max-width: 991px) {
+		padding: 80px 0 60px !important;
+	}
+
 	h3 {
 		font-style: normal;
 		font-weight: 700;
 		margin: 0 0 12px;
+
+		@media only screen and (max-width: 991px) {
+			text-align: center;
+		}
 	}
 
 	h1 {
@@ -10,6 +18,27 @@
 		font-weight: 300;
 		margin: 0 0 40px;
 		padding-right: 190px;
+
+		@media only screen and (max-width: 991px) {
+			text-align: center;
+			padding: 0;
+		}
+	}
+
+	.wp-block-button {
+		@media only screen and (max-width: 991px) {
+			display: block;
+			width: 100%;
+		}
+
+		a {
+			@media only screen and (max-width: 991px) {
+				margin: 0 auto;
+				display: block;
+				max-width: 320px;
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -109,6 +138,10 @@
 
 	p {
 		margin: 0 384px 16px 0;
+
+		@media only screen and (max-width: 991px) {
+			margin-right: 0;
+		}
 	}
 
 	.form {
@@ -123,6 +156,10 @@
 			&.left {
 				display: inline-block;
 				max-width: 456px;
+
+				@media only screen and (max-width: 991px) {
+					max-width: 100%;
+				}
 			}
 
 			&.right {
@@ -171,6 +208,10 @@
 
 		p.form-disclaimer {
 			margin: -49px 0 8px 288px;
+
+			@media only screen and (max-width: 991px) {
+				margin: 0;
+			}
 		}
 
 		a {
@@ -181,6 +222,179 @@
 			clear: both;
 		}
 	}
-
-
 }
+
+.wp-block-wesrom-testimonial-slider {
+	overflow: hidden;
+
+	h2 {
+		max-width: 1128px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+
+	.testimonial-slides {
+		position: relative;
+		box-sizing: border-box;
+		height: 494px;
+		max-width: 1128px;
+		margin: 0 auto;
+
+		.prev-button,
+		.next-button {
+			background: url(../images/arrow-big.svg) no-repeat center center / contain;
+			width: 37.38px;
+			height: 21.03px;
+			position: absolute;
+			left: 861px;
+			top: 15px;
+			cursor: pointer;
+
+			@media only screen and (max-width: 991px) {
+				top: 0;
+				left: auto;
+				right: 0;
+			}
+
+			&.disabled {
+				filter: invert(0.5);
+				cursor: default;
+			}
+		}
+
+		.prev-button {
+			transform: rotate(180deg);
+			left: 781px;
+
+			@media only screen and (max-width: 991px) {
+				left: 0;
+				right: auto;
+			}
+		}
+
+		.testimonial-slide {
+			background: #FAFAFA;
+			padding: 40px 40px 40px 40px;
+			width: 552px;
+			position: absolute;
+			box-sizing: border-box;
+			height: 414px;
+			left: 445px;
+			bottom: 0;
+			display: none;
+
+			&:before {
+				content: '';
+				background: url(../images/quote.svg) no-repeat center center/cover;
+				width: 64px;
+				height: 50px;
+				display: block;
+				position: absolute;
+				bottom: 80px;
+				left: 40px;
+				filter: invert(1);
+			}
+	
+			&.active {
+				background: $dark-blue;
+				padding: 80px 136px 162px 136px;
+				width: 744px;
+				height: 494px;
+				left: 0;
+				display: block;
+
+				@media only screen and (max-width: 991px) {
+					padding-left: 46px;
+					padding-right: 46px;
+					width: 100%;
+					height: auto;
+					z-index: 5;
+				}
+
+				&:before {
+					content: '';
+					background: url(../images/quote.svg) no-repeat center center/cover;
+					width: 64px;
+					height: 50px;
+					display: block;
+					position: absolute;
+					bottom: 80px;
+					left: 136px;
+					filter: invert(0);
+				}
+
+				&:after {
+					content: '';
+					background: url(../images/quote-big.svg) no-repeat center center / contain;
+					width: 244px;
+					height: 190px;
+					display: block;
+					position: absolute;
+					bottom: -32px;
+					right: 136px;
+				}
+
+				blockquote {
+					color: $white;
+
+					p {
+						font-size: 1.25rem;
+						line-height: 1.75rem;
+					}
+
+					figcaption {
+
+						cite {
+							display: inline;
+							margin: 0 0 0 10px;
+						}
+					}
+				}
+			}
+
+			&.left {
+				left: -576px;
+				display: block;
+			}
+
+			&.right {
+				left: 768px;
+				display: block;
+			}
+	
+			blockquote {
+				color: $black;
+				margin: 0;
+
+				p {
+					font-style: normal;
+					font-weight: 400;
+					margin: 0 0 30px;
+					font-size: 1rem;
+					line-height: 1.5rem;
+	
+					&:before {
+						content: '"';
+					}
+	
+					&:after {
+						content: '"';
+					}
+				}
+	
+				figcaption {
+					font-style: normal;
+					font-weight: 700;
+	
+					cite {
+						font-style: normal;
+						font-weight: 400;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
