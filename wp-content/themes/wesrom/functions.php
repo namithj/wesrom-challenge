@@ -19,7 +19,7 @@ add_action(
 			'wescom-styles',
 			get_template_directory_uri() . '/assets/css/style.css',
 			[],
-			wp_get_theme()->get( 'Version' ) . wp_rand()
+			wp_get_theme()->get( 'Version' ),
 		);
 
 		wp_enqueue_style(
@@ -33,7 +33,7 @@ add_action(
 			'wescom-scripts',
 			get_template_directory_uri() . '/assets/js/scripts.js',
 			[ 'jquery' ],
-			wp_get_theme()->get( 'Version' ) . wp_rand(),
+			wp_get_theme()->get( 'Version' ),
 			false
 		);
 	}

@@ -12,7 +12,7 @@ add_action(
 				'wp-components',
 				'wp-i18n',
 			],
-			'1.0.0' . rand()
+			'1.0.0'
 		);
 
 		register_block_type(
